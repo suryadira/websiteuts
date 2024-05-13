@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esp8266</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        .content b {
+            color: #007bff;
+        }
+
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP8266</h1>
+    <nav class="navbar">
+        <a href="beranda.html">Home</a> |
+        <a href="esp8266.html">ESP8266</a> |
+        <a href="esp32.html">ESP32</a> |
+        <a href="uno.html">ArduinoUNO</a>
+    </nav>
+
+    <div class="content">
+        <p>Ini adalah halaman esp8266.</p>
+        <hr>
+        <p>
+            <b>ESP8266 adalah</b> sebuah microchip Wi-Fi yang dibangun oleh Espressif Systems di Shanghai, China. ESP8266 memiliki kemampuan mikrokontroler, serta software TCP/IP networking yang terintegrasi, dan dapat digunakan secara luas dalam proyek IoT atau proyek yang berkaitan dengan WiFi. ESP8266 populer di komunitas pembuat Inggris pada bulan August 2014
+        </p>
+        <hr>
+        <p>
+            <b>Keunggulan ESP8266:</b><br>
+            <b>Konektivitas Wi-Fi:</b> Kemampuan untuk terhubung ke jaringan Wi-Fi memungkinkan ESP8266 digunakan dalam proyek-proyek IoT yang memerlukan komunikasi nirkabel.<br>
+            <b>Ringkas dan Mudah Digunakan:</b> Modul ini memiliki ukuran yang relatif kecil dan mudah diintegrasikan dengan berbagai perangkat elektronik lainnya, serta didukung oleh berbagai platform pengembangan seperti Arduino IDE dan ESP8266 SDK.<br>
+            <b>Dukungan Komunitas yang Luas:</b> ESP8266 memiliki komunitas pengembang yang besar dan aktif, sehingga terdapat banyak tutorial, forum, dan sumber daya lainnya yang dapat membantu pengguna dalam mengembangkan proyek mereka.<br>
+        </p>
+        <hr>
+        <p>
+            <b>Berikut adalah gambaran komponen ESP8266</b><br>
+            <img src="esp8266Komponen.jpg" width="200" alt="ESP8266 Komponen">
+        </p>
+        <hr>
+        <p>
+            <b>Berikut adalah tabel ESP8266</b>
+        </p>
+        <table>
+            <tr>
+                <th>Gambar</th>
+                <th>Spesifikasi</th>
+            </tr>
+            <tr>
+                <td><img src="esp8266Komponen.jpg" width="200" alt="ESP8266 Komponen"></td>
+                <td>
+                    <ul>
+                        <li>Tegangan antarmuka komunikasi: 3.3V</li>
+                        <li>Jenis antena: Tersedia antena PCB internal</li>
+                        <li>Standar nirkabel: 802.11 b/g/n</li>
+                        <li>WiFi di 2.4GHz, mendukung mode keamanan WPA/WPA2</li>
+                        <li>Mendukung tiga mode operasi: STA/AP/STA+AP</li>
+                        <li>Tumpukan protokol TCP/IP bawaan untuk mendukung beberapa koneksi klien TCP (5 MAX)</li>
+                        <li>Dilengkapi dengan minimum system serta USB UART yang memudahkan kita untuk menggunakan dan memasukan program</li>
+                        <li>Ukuran flash: 4MByte</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p>
+            <b>Berikut adalah contoh project sederhana menggunakan ESP8266</b><br>
+            <img src="esp8266.jpg" width="500" alt="Contoh Project ESP8266">
+        </p>
+        <hr>
+    </div>
+
+    <footer>
+        <p>&copy; 2020 All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esp32</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        .content b {
+            color: #007bff;
+        }
+
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP32</h1>
+    <nav class="navbar">
+        <a href="beranda.html">Home</a> |
+        <a href="esp8266.html">ESP8266</a> |
+        <a href="esp32.html">ESP32</a> |
+        <a href="uno.html">ArduinoUNO</a>
+    </nav>
+
+    <div class="content">
+        <p>Ini adalah halaman esp32.</p>
+        <hr>
+        <p>
+            <b>ESP32 adalah</b> sebuah chip system on a chip (SoC) yang terintegrasi dengan Wi-Fi dan Bluetooth dual-mode. ESP32 dibangun oleh Espressif Systems dan dirancang untuk mencapai kinerja terbaik dalam penggunaan yang efisien dan kekuatan frekuensi.
+        </p>
+        <hr>
+        <p>
+            <b>Keunggulan ESP32:</b><br>
+            <b>Kemampuan Komunikasi:</b> ESP32 memiliki WiFi yang kuat dan mendukung berbagai protokol jaringan, sehingga cocok untuk aplikasi IoT yang memerlukan konektivitas internet.<br>
+            <b>Kemampuan Bluetooth:</b> Selain WiFi, ESP32 juga memiliki kemampuan Bluetooth yang memungkinkan interaksi dengan perangkat-perangkat Bluetooth lainnya.<br>
+            <b>Kinerja:</b> Dengan dual-core processor dan kecepatan clock yang tinggi, ESP32 mampu menangani aplikasi yang lebih kompleks dengan responsif.<br>
+            <b>Ketersediaan Periferal:</b> Berbagai interface periferal yang disediakan memudahkan penggunaan sensor-sensor dan perangkat eksternal lainnya.<br>
+            <b>Harga Terjangkau:</b>  Meskipun memiliki fitur yang canggih, ESP32 umumnya tersedia dengan harga yang terjangkau, membuatnya populer di kalangan pengembang.<br>
+        </p>
+        <hr>
+        <p>
+            <b>Berikut adalah gambaran komponen ESP32</b><br>
+            <img src="esp32Komponen.jpg" width="200" alt="ESP32 Komponen">
+        </p>
+        <hr>
+        <p>
+            <b>Berikut adalah tabel ESP32</b>
+        </p>
+        <table>
+            <tr>
+                <th>Gambar</th>
+                <th>Spesifikasi</th>
+            </tr>
+            <tr>
+                <td><img src="esp32Komponen.jpg" width="200" alt="ESP32 Komponen"></td>
+                <td>
+                    <ul>
+                        <li>Dual-core Xtensa LX6 dengan clock hingga 240 MHz</li>
+                        <li>Mode Low-Power untuk konservasi daya</li>
+                        <li>SRAM: 520 KB</li>
+                        <li>ROM: 448 KB</li>
+                        <li>Dukungan mode Station, Access Point, dan Wi-Fi Direct</li>
+                        <li>Dukungan mode Classic Bluetooth (BR/EDR)</li>
+                        <li>34 pin GPIO (General Purpose Input/Output)</li>
+                        <li>12-bit SAR ADC (Analog-to-Digital Converter) hingga 18 saluran</li>
+                        <li>I2C (Inter-Integrated Circuit)</li>
+                        <li>Secure Boot</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p>
+            <b>Berikut adalah contoh project sederhana menggunakan ESP32</b><br>
+            <img src="esp32.jpg" width="500" alt="Contoh Project ESP32">
+        </p>
+        <hr>
+    </div>
+
+    <footer>
+        <p>&copy; 2020 All rights reserved</p>
+    </footer>
+</body>
+</html>

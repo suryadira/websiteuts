@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikrokontroler</title>
+    <style>
+        /* CSS styling goes here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .navbar {
+            background-color: #007bff;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+        .rightNav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MIKROKONTROLER</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="beranda.html">Home</a>
+        <a href="esp8266.html">ESP8266</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="uno.html">ArduinoUNO</a>
+    </div>
+
+    <div class="rightNav">
+        <input type="text" name="search" id="search" placeholder="Search...">
+        <button class="btn btn-sm" onclick="search()">Search</button>
+    </div>
+
+    <div class="content">
+        <img src="mikrokontroler.jpg" alt="Mikrokontroler">
+        <p>Selamat datang di website saya. Silakan jelajahi berbagai informasi tentang mikrokontroler yang tersedia di sini.</p>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved</p>
+    </footer>
+
+    <script>
+        function search() {
+            var input, filter, cards, cardContainer, title, i;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementsByClassName("content")[0];
+            cards = cardContainer.getElementsByTagName("p");
+
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].getElementsByTagName("p")[0];
+                if (title) {
+                    if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
